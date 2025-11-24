@@ -1,86 +1,383 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    <title>Responsive Portfolio Website</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Eliane Coelho</a>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
 
-            </section>
+            <div class="nav__btns">
+                <!-- Botão tema claro/escuro -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+                <!-- Menu mobile -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            </section>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://github.com/seu-usuario" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://instagram.com/seu-usuario" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+                    <div class="home__img">
+                        <!-- blob + foto de perfil -->
+                        <svg class="home__blob" viewBox="0 0 200 187">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.4391 208.311 97.1071 
+                                195.016 126.433C181.722 155.759 153.403 179.742 123.644 185.324C93.8852 
+                                190.906 62.6864 178.088 42.6782 154.061C22.67 130.035 13.8534 94.8009 
+                                22.7202 64.2757C31.587 33.7506 58.137 7.93401 86.7393 2.38489C115.342 
+                                -3.16422 144.042 11.0867 160.312 37.0379Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.4391 208.311 97.1071 
+                                195.016 126.433C181.722 155.759 153.403 179.742 123.644 185.324C93.8852 
+                                190.906 62.6864 178.088 42.6782 154.061C22.67 130.035 13.8534 94.8009 
+                                22.7202 64.2757C31.587 33.7506 58.137 7.93401 86.7393 2.38489C115.342 
+                                -3.16422 144.042 11.0867 160.312 37.0379Z"/>
+                                <image class="home__blob-img" x="12" y="18" href="./assets/img/perfil2.png"/>
+                            </g>
+                        </svg>
+                    </div>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Eliane</h1>
+                        <h3 class="home__subtitle">Teacher & Digital Forensics</h3>
+                        <p class="home__description">
+                            Professor of technical computing subjects and digital forensics professional,
+                            working with programming, databases and cybersecurity.
+                        </p>
+                        <a href="#contact" class="button">
+                            Contact Me
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                        <a href="./assets/pdf/Profile.pdf" target="_blank" class="button button--ghost">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
 
-            </section>
+            <div class="about__container container grid">
+                <img src="./assets/img/about.png" alt="About" class="about__img">
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+                <div class="about__data">
+                    <p class="about__description">
+                        I teach Computer Science, Front-End and Back-End Programming,
+                        Databases and Systems Analysis & Design in technical high school.
+                        I also work with digital forensics and incident response.
+                    </p>
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">+5</span>
+                            <span class="about__info-name">Years<br>Experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">+X</span>
+                            <span class="about__info-name">Classes<br>Taught</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">+Y</span>
+                            <span class="about__info-name">Projects<br>Guided</span>
+                        </div>
+                    </div>
 
-            </section>
-        </main>
+                    <div class="about__buttons">
+                        <a href="#portfolio" class="button">
+                            View Projects
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Technical level</span>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+            <div class="skills__container container grid">
+                <div>
+                    <h3 class="skills__title">Development</h3>
+                    <ul class="skills__list">
+                        <li class="skills__data">HTML, CSS, JavaScript</li>
+                        <li class="skills__data">Java, Python</li>
+                        <li class="skills__data">Full Stack Web</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="skills__title">Data & Analysis</h3>
+                    <ul class="skills__list">
+                        <li class="skills__data">Relational Databases</li>
+                        <li class="skills__data">SQL & Modeling</li>
+                        <li class="skills__data">Systems Analysis</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="skills__title">Security & Forensics</h3>
+                    <ul class="skills__list">
+                        <li class="skills__data">Digital Forensics</li>
+                        <li class="skills__data">Incident Response</li>
+                        <li class="skills__data">Cybersecurity practices</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Education & Work</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__data">
+                    <h3 class="qualification__title">Systems Analysis & Development</h3>
+                    <span>Technologist</span>
+                </div>
+                <div class="qualification__data">
+                    <h3 class="qualification__title">Teacher in Technical Education</h3>
+                    <span>Computer Science & Programming</span>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <i class="uil uil-monitor services__icon"></i>
+                    <h3 class="services__title">Technical Teaching</h3>
+                    <p class="services__description">
+                        Classes and projects in programming, databases and computer science.
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class="uil uil-shield-check services__icon"></i>
+                    <h3 class="services__title">Digital Forensics</h3>
+                    <p class="services__description">
+                        Analysis of digital evidence and support in judicial processes.
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class="uil uil-presentation-edit services__icon"></i>
+                    <h3 class="services__title">Workshops</h3>
+                    <p class="services__description">
+                        Training in cybersecurity and safe use of technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Recent work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">School Management System</h3>
+                            <p class="portfolio__description">
+                                Full stack web system for managing students, classes and grades.
+                            </p>
+                            <a href="#" class="button button--small">
+                                View project
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Digital Forensics Case</h3>
+                            <p class="portfolio__description">
+                                Timeline reconstruction and log analysis in a fraud investigation.
+                            </p>
+                            <a href="#" class="button button--small">
+                                View project
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Didactic Materials</h3>
+                            <p class="portfolio__description">
+                                Interactive content for front-end programming classes.
+                            </p>
+                            <a href="#" class="button button--small">
+                                View project
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper controls -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <h2 class="section__title">Have a project in mind?</h2>
+            <span class="section__subtitle">Let's talk</span>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">What people say</span>
+
+            <div class="testimonial__container container">
+                <div class="testimonial__content">
+                    <h3 class="testimonial__name">Student / Colleague</h3>
+                    <p class="testimonial__description">
+                        Example testimonial about your work as a teacher or professional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">seu.email@exemplo.com</span>
+                    </div>
+                </div>
+                <div class="contact__information">
+                    <i class="uil uil-linkedin contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">LinkedIn</h3>
+                        <span class="contact__subtitle">/in/seu-perfil</span>
+                    </div>
+                </div>
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Almirante Tamandaré - PR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Eliane Coelho</h1>
+                    <span class="footer__subtitle">Teacher & Digital Forensics</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                    <li><a href="#contact" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <p class="footer__copy">&#169; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+</body>
 </html>
