@@ -159,3 +159,22 @@ if (themeButton) {
     localStorage.setItem('selected-icon', getCurrentIcon())
   })
 }
+
+//===================FONT-SIZE=====================
+const aumentaFonte = document.getElementById('font+button');
+const diminuiFonte = document.getElementById('font-button');
+let tamanhoAtualFonte = 1;
+aumentaFonte.addEventListener('click', function(){
+  if(tamanhoAtualFonte < 2.5){
+    tamanhoAtualFonte += 0.1;
+    document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+  } else if(tamanhoAtualFonte >= 2.5){
+    tamanhoAtualFonte += 0;
+  }
+});
+diminuiFonte.addEventListener('click', function(){
+  if(tamanhoAtualFonte > 0.2){
+    tamanhoAtualFonte -= 0.1;
+    document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+  }
+})
